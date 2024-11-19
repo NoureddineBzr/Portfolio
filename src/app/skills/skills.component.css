@@ -1,0 +1,40 @@
+.default-container {
+    padding: 20px; /* Ensuring the content is not touching edges on small screens */
+}
+
+.content {
+    margin-top: 20px; /* Adding space at the top */
+}
+
+.content-left {
+    padding: 20px;
+}
+
+.default-topic {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.default-p {
+    font-size: 1.125rem;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .default-topic {
+        font-size: 1.5rem; /* Smaller font size on mobile */
+    }
+
+    .default-p {
+        font-size: 1rem; /* Smaller font size on mobile */
+    }
+
+    .content-left {
+        padding: 10px; /* Less padding for small screens */
+    }
+
+    /* Aligning the text and content better on smaller screens */
+    .row {
+        padding: 0 10px;
+    }
+}

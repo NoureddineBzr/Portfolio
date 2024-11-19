@@ -1,0 +1,123 @@
+.modal-content {
+    background-color: #27333f;
+    color: white;
+    padding: 20px; /* Add padding for spacing */
+    border-radius: 8px; /* Slightly rounded corners */
+}
+
+.modal-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #8c98a3;
+    line-height: 3rem;
+    margin-bottom: 20px; /* Add margin to space out the title */
+}
+
+.modal-description {
+    font-weight: bold;
+    align-content: center;
+    margin-top: 15px; /* Add top margin for spacing */
+}
+
+img {
+    margin-bottom: 1rem;
+    width: 100%; /* Ensure images scale responsively */
+    border-radius: 8px; /* Add rounded corners for better appearance */
+}
+
+.p-modal {
+    color: #8c98a3;
+    font-size: 1.12rem;
+    line-height: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.github {
+    color: white;
+    position: relative;
+    text-decoration: none;
+}
+
+.github:hover {
+    color: #00FF00; /* Highlight color when hovering */
+}
+
+/* Tags styling */
+.tag {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    color: white;
+    display: inline-block;
+    margin: 5px 10px 5px 0;
+}
+
+/* Make the modal responsive */
+@media (max-width: 768px) {
+    .modal-content {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .modal-title {
+        font-size: 2rem; /* Adjust font size for mobile */
+        line-height: 2.5rem; /* Adjust line height */
+        margin-bottom: 10px; /* Reduce margin */
+    }
+
+    .modal-description {
+        font-size: 1.5rem; /* Slightly smaller description font */
+        margin-top: 10px; /* Reduce top margin */
+    }
+
+    .p-modal {
+        font-size: 1rem; /* Reduce text size */
+    }
+
+    .github {
+        font-size: 1rem; /* Adjust font size for better legibility */
+    }
+
+    /* Responsive image adjustments */
+    img {
+        max-width: 100%;
+        height: auto; /* Ensure images scale with screen size */
+    }
+
+    /* Responsive tags layout */
+    .d-flex {
+        flex-direction: column; /* Stack tags vertically on smaller screens */
+        align-items: flex-start; /* Align tags to the left */
+    }
+
+    .tag {
+        font-size: 1rem; /* Adjust tag font size */
+        margin-bottom: 5px; /* Add space between tags */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-title {
+        font-size: 1.5rem; /* Adjust font size further for very small screens */
+    }
+
+    .modal-description {
+        font-size: 1.25rem; /* Slightly smaller font size for description */
+    }
+
+    .p-modal {
+        font-size: 0.9rem; /* Even smaller text for very small screens */
+    }
+
+    .github {
+        font-size: 0.9rem; /* Adjust font size of links */
+    }
+
+    /* Adjust image size for very small screens */
+    img {
+        width: 100%;
+    }
+
+    .tag {
+        font-size: 0.9rem; /* Smaller tag font size */
+    }
+}

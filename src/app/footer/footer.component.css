@@ -1,0 +1,96 @@
+.footer {
+  background-color: #27333f;
+  padding: 20px 0;
+  color: #adb5bd;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on small screens */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; /* Allow wrapping for mobile devices */
+}
+
+.footer p {
+  margin: 0;
+  color: #b0caf063;
+  flex: 1;
+  text-align: center; /* Center text for smaller devices */
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center; /* Center the icons on small screens */
+  flex-wrap: wrap; /* Allow icons to wrap */
+}
+
+.footer-icons a {
+  color: #b0caf063;
+  margin-left: 10px;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px; /* Reduce size for mobile */
+}
+
+.footer-icons a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: #00FF00;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.footer-icons a:hover::after {
+  width: 100%;
+  left: 0;
+  background: #00FF00;
+}
+
+.footer-icons a:hover,
+.footer-icons a:active {
+  color: #f8f9fa;
+}
+
+/* Font Awesome Icons */
+.fab,
+.fas {
+  font-size: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer .container {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align content */
+  }
+
+  .footer-content {
+    flex-direction: column; /* Stack content vertically on small screens */
+    align-items: center; /* Center align content */
+  }
+
+  .footer p {
+    text-align: center;
+    margin-bottom: 10px; /* Add space between text and icons */
+  }
+
+  .footer-icons {
+    justify-content: center; /* Center icons on mobile */
+  }
+
+  .footer-icons a {
+    font-size: 18px; /* Reduce icon size for small screens */
+    margin: 5px; /* Adjust margin between icons */
+  }
+}

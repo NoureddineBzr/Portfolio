@@ -1,0 +1,56 @@
+/* Accordion Left and Accordion Text */
+.accordion-left {
+    max-width: 100%; /* Ensure full width for small screens */
+    padding: 0 10px; /* Add padding for smaller devices */
+}
+
+/* Accordion Text Styles */
+.accordion-text {
+    font-size: 1rem; /* Use readable font size on phones */
+}
+
+/* Tech Board Styling */
+.tech-board {
+    display: grid;
+    max-width: 100%; /* Full width for better scaling on mobile */
+    grid-template-columns: repeat(2, 1fr); /* Default 2 columns for medium screens */
+    grid-gap: 5px; /* Space between tech icons */
+    padding: 10px; /* Reduced padding for mobile */
+    border-radius: 6px; /* Rounded corners */
+}
+
+.tech-cell {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #27333f;
+    border: 2px solid #00FF00;
+    padding: 5px; /* Reduced padding */
+    margin: 10px 15px; /* Reduced margin for tight spacing */
+    border-radius: 6px;
+    color: white;
+    font-size: 3rem; /* Scaled down size for small screens */
+}
+
+@media (max-width: 768px) {
+    /* Single column on smaller screens for tech icons */
+    .tech-board {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* Tech Cell Icons font-size adjustment for mobile */
+    .tech-cell {
+        font-size: 2.5rem; /* Further reduce size */
+        margin: 10px auto; /* Center items */
+    }
+
+    /* Accordion Text Font Size Adjustment for mobile */
+    .accordion-text {
+        font-size: 0.9rem; /* Reduce text size on smaller devices */
+    }
+
+    /* Accordion Heading Font Size Adjustment */
+    .accordion-title {
+        font-size: 1rem; /* Make heading font smaller */
+    }
+}

@@ -1,0 +1,101 @@
+/* Global Navbar Styles */
+.navbar {
+    background-color: #27333f;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #f8f9fa;
+    font-size: 2rem;
+}
+
+.nav-link {
+    color: #adb5bd;
+    font-size: 1rem;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #f8f9fa;
+}
+
+.nav-number {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #f8f9fa;
+    margin-right: 5px;
+}
+
+.shadow-sm {
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
+
+.bg-dark {
+    background-color: hsl(212, 26%, 14%) !important;
+}
+
+/* Responsive Styles for Tablet and Mobile */
+@media (max-width: 1024px) {
+    .navbar .container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-brand {
+        font-size: 1.8rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    .nav-number {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .nav-link {
+        font-size: 0.8rem;
+    }
+
+    .nav-number {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .container {
+        padding: 10px;
+    }
+
+    .navbar-brand {
+        font-size: 1.4rem;
+        margin-bottom: 10px;
+    }
+
+    .nav-link {
+        font-size: 0.75rem;
+    }
+
+    .nav-number {
+        font-size: 0.85rem;
+    }
+}

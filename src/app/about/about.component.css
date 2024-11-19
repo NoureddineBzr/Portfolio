@@ -1,0 +1,14 @@
+/* Default Styles for .about-picture */
+.about-picture {
+    max-width: 820px;
+    margin: 0.5rem 0rem 2rem 0rem;
+    width: 100%;
+}
+
+/* Responsive Styles for Screens Smaller Than 768px */
+@media (max-width: 768px) {
+    .about-picture {
+        width: 250px; /* Adjusts the width for small screens */
+        margin: 1rem auto 2rem auto; /* Adjusts margins for better spacing */
+    }
+}
